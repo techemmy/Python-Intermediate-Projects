@@ -22,7 +22,7 @@ def start_timer(hour, minute, seconds):
         time.sleep(1)
 
 try:
-    timer = input("Enter time > ").split(":")
+    timer = input("Enter time (H:M:S)> ").split(":")
     hour, minute, seconds = int(timer[0]), int(timer[1]), int(timer[2])
     start_timer(hour, minute, seconds)
 except ValueError:
